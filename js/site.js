@@ -9,7 +9,7 @@ Site.prototype = {
 	parse: function(){
 		var client = new XMLHttpRequest();
 		var xmlDoc;
-		client.open('GET',"http://lavelle.azurewebsites.net/js/xml/website.xml",false);
+		client.open('GET',"xml/website.xml",false);//"http://lavelle.azurewebsites.net/js/xml/website.xml",false);
 		client.send();
 		var siteInfo = (client.responseXML);
 		var seriesLength = parseInt(siteInfo.getElementsByTagName("site")[0].getAttribute("length"));
@@ -18,11 +18,13 @@ Site.prototype = {
 			tempSeries.name = siteInfo.getElementsByTagName("series")[x].getAttribute("name");
 			tempSeries.description = siteInfo.getElementsByTagName("series")[x].getAttribute("description");
 			tempSeries.imagesXML = siteInfo.getElementsByTagName("series")[x].childNodes;
+			console.log("Series: " + x);
 			for(var y = 0; y < tempSeries.imagesXML.length; y++){
+				console.log("Image: " + y);
 				var tempImage = new SeriesImage();
-				tempImage.name = tempSeries.imagesXML[x].getAttribute("name");
-				tempImage.description = tempSeries.imagesXML[x].getAttribute("description");
-				tempImage.path = tempSeries.imagesXML[x].getAttribute("path");
+				tempImage.name = tempSeries.imagesXML[y].getAttribute("name");
+				tempImage.description = tempSeries.imagesXML[y].getAttribute("description");
+				tempImage.path = tempSeries.imagesXML[y].getAttribute("path");
 				tempImage.setup();
 				tempSeries.addImage(tempImage);
 			}

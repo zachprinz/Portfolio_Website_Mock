@@ -7,6 +7,6 @@ SeriesImage = function(){
 
 SeriesImage.prototype = {
 	setup: function(){
-		this.image.src = '..images/' + this.path;
+		this.image.src = 'images/' + this.path;
 	}
 }
