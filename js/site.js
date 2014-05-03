@@ -9,6 +9,7 @@ Site = function(width,height,ctx){
 	this.imageHeight = this.height/1.8;
 	this.ctx = ctx;
 	this.loadedCount = 0;
+	this.shiftRight();
 };
 
 Site.prototype = {
