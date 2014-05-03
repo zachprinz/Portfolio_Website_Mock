@@ -1,13 +1,13 @@
 <site length="3">
-	<series name="Series One" description="This is series one, it is art. FUCKING LOOK AT IT MOTHER FUCKER."></series>
+	<series name="Series One" description="This is series one, it is art. FUCKING LOOK AT IT MOTHER FUCKER.">
 		<image name="Image One" path="hands.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
 	</series>
-	<series name="Series Two" description="This is series two, it has multiple images because WE COULD FIT ALL THE ART IN ONE PICTURE DAMN."></series>
+	<series name="Series Two" description="This is series two, it has multiple images because WE COULD FIT ALL THE ART IN ONE PICTURE DAMN.">
 		<image name="Image One" path="photo1.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
 		<image name="Image Twp" path="photo2.jpg" description="WHAAAAT?!? MORE ART?"></image>
 		<image name="Image Three" path="photo3.jpg" description="THERE IS ALL THE ART IN THIS ONE!"></image>
 	</series>
-	<series name="Series Three" description="This is series two (kidding three), it is art."></series>
+	<series name="Series Three" description="This is series two (kidding three), it is art.">
 		<image name="Image One" path="picture.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
 	</series>
 </site>
