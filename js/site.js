@@ -9,7 +9,7 @@ Site.prototype = {
 	parse: function(){
 		var client = new XMLHttpRequest();
 		var xmlDoc;
-		client.open('GET',"xml/website.xml",false);//"http://lavelle.azurewebsites.net/js/xml/website.xml",false);
+		client.open('GET',"js/xml/website.xml",false);//"http://lavelle.azurewebsites.net/js/xml/website.xml",false);
 		client.send();
 		var siteInfo = (client.responseXML);
 		var seriesLength = parseInt(siteInfo.getElementsByTagName("site")[0].getAttribute("length"));
