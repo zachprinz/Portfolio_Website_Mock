@@ -47,3 +47,4 @@ var enlarge = function(){
 
 };
 
+site.draw(ctx);
