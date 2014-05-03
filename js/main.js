@@ -46,3 +46,5 @@ var shift = function(x,y){
 var enlarge = function(){
 
 };
+
+shift(1,0);
