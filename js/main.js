@@ -6,6 +6,7 @@ ctx.fillRect(0,0,150,75);
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = 500;
 var site = new Site(window.innerWidth,500);
+shift(1,0);
 
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
@@ -46,5 +47,3 @@ var shift = function(x,y){
 var enlarge = function(){
 
 };
-
-site.draw(ctx);
