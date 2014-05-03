@@ -7,13 +7,15 @@ ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = 500;
 var site = new Site(window.innerWidth,500,ctx);
 
+window.onresize=function(){
+	updateSize()
+};
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
     if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 }, false);
-
 window.addEventListener('keydown', (function(event){
   switch (event.keyCode) {
     case 37: // Left
@@ -30,7 +32,6 @@ window.addEventListener('keydown', (function(event){
     break;
   }
 }), false);
-
 var shift = function(x,y){
 	if(x > 0)
 		site.shiftRight();
@@ -44,4 +45,7 @@ var shift = function(x,y){
 };
 var enlarge = function(){
 
+};
+var updateSize = function(){
+	site.reset(window.innerWidth,500);
 };

@@ -13,6 +13,13 @@ Site = function(width,height,ctx){
 };
 
 Site.prototype = {
+	reset: function(width,height){
+		this.width = width;
+		this.height = 500;
+		this.imageWidth = this.width/3.3;
+		this.imageHeight = this.height/1.8;
+		this.draw(this.ctx);
+	},
 	draw: function(ctx){
 		console.log("Drawing!");
 		//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
