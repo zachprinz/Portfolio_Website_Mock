@@ -1,4 +1,4 @@
-Image = function(){
+SeriesImage = function(){
 	this.name;
 	this.description;
 	this.path;
@@ -6,6 +6,6 @@ Image = function(){
 	this.image.src = 'images/' + path;
 }
 
-Image.prototype = {
+SeriesImage.prototype = {
 
 }
