@@ -1,13 +1,52 @@
 <site length="3">
-	<series name="Series One" description="This is series one, it is art. FUCKING LOOK AT IT MOTHER FUCKER.">
-		<image name="Image One" path="hands.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
+	<series name="Series One" description="This is series one, it is art. FUCKING LOOK AT IT.">
+		<image name="Hand" path="hands.jpg" description="SHIT, CHRISTIAN GET OVER HERE THERE ARE LITERALLY FUCKING HANDS COMING OUT OF THE WALL!"></image>
 	</series>
-	<series name="Series Two" description="This is series two, it has multiple images because WE COULD FIT ALL THE ART IN ONE PICTURE DAMN.">
-		<image name="Image One" path="photo1.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
-		<image name="Image Twp" path="photo2.jpg" description="WHAAAAT?!? MORE ART?"></image>
-		<image name="Image Three" path="photo3.jpg" description="THERE IS ALL THE ART IN THIS ONE!"></image>
+	<series name="Buildings!" description="This is series two, it has multiple images because WE COULD FIT ALL THE ART IN ONE PICTURE DAMN.">
+		<image name="A roof!" path="photo1.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
+		<image name="Hint! (Scroll over me!)" path="photo2.jpg" description="
+Slow down, we've got time left to be lazy
+All the kids have bloomed from babies into flowers in our eyes
+We've got fifty good years left to spend out in the garden
+I don't care to beg your pardon, we should live until we die
+
+We were barely eighteen when we crossed collective hearts
+It was cold, but it got warm when you barely crossed my eye
+And then you turned, put out your hand, and you asked me to dance
+I knew nothing of romance, but it was love at second sight
+
+I swear when I grow up I won't just buy you a rose
+I will buy the flower shop, and you will never be lonely
+For even if the sun stops waking up over the fields
+I will not leave, I will not leave 'til it's our time
+So just take my hand, you know that I will never leave your side
+
+It was the winter of '86, all the fields had frozen over
+So we moved to Arizona to save our only son
+And now he's turned into a man, though he thinks just like his mother
+He believes we're all just lovers, he sees hope in everyone
+
+And even though she moved away, we always get calls from our daughter
+She has eyes just like her father's, they are blue when skies are gray
+And just like him she never stops, never takes the day for granted
+Works for everything that's handed to her, never once complains
+
+You think that I nearly lost you when the doctors tried to take you away
+Like the night you took my hand beside the fire thirty years ago to this day,
+You swore you'd be here 'til we decide that it's our time
+But it's not time, you never quit in all your life
+So just take my hand, you know that I will never leave your side
+You're the love of my life, you know that I will never leave your side
+
+You come home from work, and you kiss me on the eye
+You curse the dog, you say that I should never feed them what is ours
+So we move out to the garden, look at everything we've grown
+And the kids are coming home so I'll set the table; you can make the fire
+">
+</image>
+		<image name="Ceiling in Color!" path="photo3.jpg" description="THERE IS ALL THE ART IN THIS ONE!"></image>
 	</series>
 	<series name="Series Three" description="This is series two (kidding three), it is art.">
-		<image name="Image One" path="picture.jpg" description="OOOOOhhh, look at this art man. Radical"></image>
+		<image name="A Picture!" path="picture.jpg" description="All black and white!"></image>
 	</series>
 </site>
