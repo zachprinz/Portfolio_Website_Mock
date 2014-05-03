@@ -12,4 +12,7 @@ Series.prototype = {
 		this.images[this.imageCount] = image;
 		this.imageCount++;
 	},
+	getImage: function(x){
+		return this.images[this.currentImage + x].image;
+	}
 }

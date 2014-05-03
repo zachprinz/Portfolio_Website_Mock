@@ -1,4 +1,3 @@
-var site = new Site();
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -6,7 +5,14 @@ ctx.fillStyle = "#FF0000";
 ctx.fillRect(0,0,150,75);
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = 500;
-//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+var site = new Site(window.innerWidth,500);
+
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
 
 window.addEventListener('keydown', (function(event){
   switch (event.keyCode) {
@@ -34,7 +40,7 @@ var shift = function(x,y){
 		site.shiftUp();
 	if(y < 0)
 		site.shiftDown()
-	ctx.drawImage(site.getImage(),0,0);
+	site.draw(ctx);
 };
 
 var enlarge = function(){
