@@ -43,6 +43,7 @@ var shift = function(x,y){
 	site.draw(ctx);
 };
 shift(1,0);
+site.draw(ctx);
 
 var enlarge = function(){
 
