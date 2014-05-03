@@ -47,4 +47,3 @@ var enlarge = function(){
 
 };
 
-shift(1,0);

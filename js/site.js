@@ -7,6 +7,7 @@ Site = function(width,height){
 	this.currentSeries = 0;
 	this.imageWidth = this.width/3.3;
 	this.imageHeight = this.height/1.8;
+	this.shiftRight();
 };
 
 Site.prototype = {
