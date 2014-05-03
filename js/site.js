@@ -23,6 +23,7 @@ Site.prototype = {
 				tempImage.name = tempSeries.imagesXML[x].getAttribute("name");
 				tempImage.description = tempSeries.imagesXML[x].getAttribute("description");
 				tempImage.path = tempSeries.imagesXML[x].getAttribute("path");
+				tempImage.setup();
 				tempSeries.addImage(tempImage);
 			}
 			this.series[this.seriesCount] = tempSeries;
