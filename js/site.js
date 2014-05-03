@@ -1,4 +1,4 @@
-Site = function(width,height){
+Site = function(width,height,ctx){
 	this.series = [50];
 	this.seriesCount = 0;
 	this.parse();
@@ -7,10 +7,13 @@ Site = function(width,height){
 	this.currentSeries = 0;
 	this.imageWidth = this.width/3.3;
 	this.imageHeight = this.height/1.8;
+	this.ctx = ctx;
+	this.loadedCount = 0;
 };
 
 Site.prototype = {
 	draw: function(ctx){
+		console.log("Drawing!");
 		//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
 		ctx.clearRect(0, 0, this.width, this.height);
 		var previous = null;
@@ -53,14 +56,14 @@ Site.prototype = {
 		var siteInfo = (client.responseXML);
 		var seriesLength = parseInt(siteInfo.getElementsByTagName("site")[0].getAttribute("length"));
 		for(var x = 0; x < seriesLength; x++){
-			var tempSeries = new Series();
+			var tempSeries = new Series(this);
 			tempSeries.name = siteInfo.getElementsByTagName("series")[x].getAttribute("name");
 			tempSeries.description = siteInfo.getElementsByTagName("series")[x].getAttribute("description");
 			tempSeries.imagesXML = siteInfo.getElementsByTagName("series")[x].getElementsByTagName("image");
 			console.log("Series: " + x);
 			for(var y = 0; y < tempSeries.imagesXML.length; y++){
 				console.log("Image: " + y);
-				var tempImage = new SeriesImage();
+				var tempImage = new SeriesImage(tempSeries);
 				tempImage.name = tempSeries.imagesXML[y].getAttribute("name");
 				tempImage.description = tempSeries.imagesXML[y].getAttribute("description");
 				tempImage.path = tempSeries.imagesXML[y].getAttribute("path");
@@ -94,5 +97,11 @@ Site.prototype = {
 	getImage: function(){
 		var currentImage = this.series[this.currentSeries].currentImage;
 		return this.series[this.currentSeries].images[currentImage].image;
+	},
+	updateDraw: function(){
+		console.log("Updating Draw");
+		this.loadedCount++;
+		if(this.loadedCount > 3)
+			this.draw(this.ctx);
 	}
 }
